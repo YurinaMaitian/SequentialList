@@ -16,7 +16,7 @@ namespace SequentialList {
         int k=0;
         (*L)=(SqList<T>*)malloc(sizeof(SqList<T>));
         for (int i=0;i<n;i++) {
-            L->data[i]=a[i];
+            (*L)->data[i]=a[i];
             k++;
         }
         (*L)->length=k;
@@ -47,8 +47,8 @@ namespace SequentialList {
     void DispList(SqList<T> *L) {
         for (int i=0;i<L->length;i++) {
             std::cout<<L->data[i]<<" ";
-            printf("\n");
         }
+        printf("\n");
     }
 
     //获取第i个元素的值,不是下标
