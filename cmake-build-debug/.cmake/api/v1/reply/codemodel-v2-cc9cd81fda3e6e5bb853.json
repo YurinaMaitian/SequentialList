@@ -12,11 +12,7 @@
 						"string" : "3.30"
 					},
 					"projectIndex" : 0,
-					"source" : ".",
-					"targetIndexes" : 
-					[
-						0
-					]
+					"source" : "."
 				}
 			],
 			"name" : "Debug",
@@ -27,23 +23,10 @@
 					[
 						0
 					],
-					"name" : "SequentialList",
-					"targetIndexes" : 
-					[
-						0
-					]
+					"name" : "SequentialList"
 				}
 			],
-			"targets" : 
-			[
-				{
-					"directoryIndex" : 0,
-					"id" : "SequentialList::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SequentialList-Debug-4727c736a7a81b3f0797.json",
-					"name" : "SequentialList",
-					"projectIndex" : 0
-				}
-			]
+			"targets" : []
 		}
 	],
 	"kind" : "codemodel",

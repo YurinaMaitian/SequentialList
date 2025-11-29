@@ -40,38 +40,6 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = D$:/Cpp$ Projects/DataStructure/SequentialList/cmake-build-debug/
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target SequentialList
-
-
-#############################################
-# Order-only phony target for SequentialList
-
-build cmake_object_order_depends_target_SequentialList: phony || .
-
-build CMakeFiles/SequentialList.dir/src/SequentialList.cpp.obj: CXX_COMPILER__SequentialList_unscanned_Debug D$:/Cpp$ Projects/DataStructure/SequentialList/src/SequentialList.cpp || cmake_object_order_depends_target_SequentialList
-  DEP_FILE = CMakeFiles\SequentialList.dir\src\SequentialList.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -I"D:/Cpp Projects/DataStructure/SequentialList/include"
-  OBJECT_DIR = CMakeFiles\SequentialList.dir
-  OBJECT_FILE_DIR = CMakeFiles\SequentialList.dir\src
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target SequentialList
-
-
-#############################################
-# Link the static library libSequentialList.a
-
-build libSequentialList.a: CXX_STATIC_LIBRARY_LINKER__SequentialList_Debug CMakeFiles/SequentialList.dir/src/SequentialList.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles\SequentialList.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = libSequentialList.a
-  TARGET_PDB = SequentialList.a.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -98,8 +66,6 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build SequentialList: phony libSequentialList.a
-
 # =============================================================================
 # Folder targets.
 
@@ -108,7 +74,7 @@ build SequentialList: phony libSequentialList.a
 #############################################
 # Folder: D:/Cpp Projects/DataStructure/SequentialList/cmake-build-debug
 
-build all: phony libSequentialList.a
+build all: phony
 
 # =============================================================================
 # Built-in targets

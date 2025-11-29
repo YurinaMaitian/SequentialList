@@ -3,12 +3,9 @@ project(SequentialList)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_library(SequentialList STATIC
-        src/SequentialList.cpp
-)
+add_library(SequentialList INTERFACE)
 
-target_include_directories(SequentialList
-        PUBLIC
+target_include_directories(SequentialList INTERFACE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
         $<INSTALL_INTERFACE:include>
 )
